@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0px"
+        android:layout_height="0px"/>
+
+    <TextView
+        android:id="@+id/jxustLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="Home Tutor"
+        android:textAlignment="center"
+        android:textColor="@color/MidnightBlue"
+        android:textSize="60sp"
+        android:textStyle="normal|bold"
+        tools:text="Home Tutor" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/login_user_email"
+        android:inputType="textPersonName"
+        android:nextFocusLeft="@id/password"
+        android:nextFocusUp="@id/username"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/submitLogin"
+        android:layout_alignStart="@+id/username"
+        android:layout_marginBottom="71dp"
+        android:ems="10"
+        android:hint="@string/login_user_password"
+        android:inputType="textPassword"
+        android:textAlignment="center" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/submitLogin"
+        android:layout_alignStart="@+id/submitLogin"
+        android:layout_marginBottom="18dp">
+        <RadioButton android:id="@+id/radio_student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_student"/>
+        <RadioButton android:id="@+id/radio_tutor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/login_tutor"/>
+
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submitLogin"
+        android:text="Login"
+        android:background="@drawable/button_main"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp"
+        android:minWidth="170dp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/bottom_bar_color"
+        android:layout_marginBottom="97dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text=""
+        android:textColor="#990000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/invalid" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@id/jxustLogo"
+        android:layout_marginBottom="135dp"
+        app:srcCompat="@drawable/full_logox" />
+
+
+</RelativeLayout>

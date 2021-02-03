@@ -1,0 +1,249 @@
+@startuml
+
+title __MODELS's Class Diagram__\n
+
+  namespace com.jxust.tutor {
+    namespace models {
+      class com.jxust.tutor.models.AudioRecording {
+          + AudioRecording()
+          + deleteAudioRecording()
+          + getAll()
+          + getData()
+          + getDataBySessionId()
+          + getDataByStudentAndSessionId()
+          + getDataByStudentId()
+          + insert()
+          + update()
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace models {
+      class com.jxust.tutor.models.AvailableTime {
+          - day : String
+          - endTime : String
+          - month : String
+          - startTime : String
+          - year : String
+          + AvailableTime()
+          + deleteRecord()
+          + getAll()
+          + getAllOrderedByDay()
+          + getByDay()
+          + getData()
+          + getDataByTutorId()
+          + getUpcomingDataByTutorId()
+          + insert()
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace models {
+      class com.jxust.tutor.models.Course {
+          + Course()
+          + deleteCourse()
+          + getAll()
+          + getData()
+          + getDataByCourseCode()
+          + getDataByTitle()
+          + insert()
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace models {
+      class com.jxust.tutor.models.CoursesTutors {
+          ~ dbRead : SQLiteDatabase
+          ~ dbWrite : SQLiteDatabase
+          + CoursesTutors()
+          + getCourseNamesFromTutor()
+          + getCoursesFromTutor()
+          + getTutorsFromCourse()
+          + insertCoursesTutors()
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace models {
+      class com.jxust.tutor.models.DBHelper {
+          {static} + DATABASE_NAME : String
+          + DBHelper()
+          + onCreate()
+          + onDowngrade()
+          + onUpgrade()
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace models {
+      class com.jxust.tutor.models.Location {
+          + Location()
+          + deleteLocation()
+          + getAll()
+          + getData()
+          + getDataByLocation()
+          + getLocationBySchool()
+          + insert()
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace models {
+      class com.jxust.tutor.models.School {
+          + School()
+          + deleteSchool()
+          + getAll()
+          + getData()
+          + getDataByName()
+          + getDataByType()
+          + getSchoolsByLocation()
+          + insert()
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace models {
+      class com.jxust.tutor.models.Student {
+          + Student()
+          + deleteStudent()
+          + getAll()
+          + getData()
+          + getDataByFirstName()
+          + getDataByLastName()
+          + getDataEmail()
+          + getSchoolAndType()
+          + insert()
+          + validateEmail()
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace models {
+      abstract class com.jxust.tutor.models.Table {
+          # dbRead : SQLiteDatabase
+          # dbWrite : SQLiteDatabase
+          # res : Cursor
+          + Table()
+          + Table()
+          {abstract} + getAll()
+          {abstract} + getData()
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace models {
+      class com.jxust.tutor.models.Tutor {
+          + Tutor()
+          + deleteTutor()
+          + getAll()
+          + getAllForCursorAdapter()
+          + getData()
+          + getDataByFirstName()
+          + getDataByLastName()
+          + getDataByRating()
+          + getDataEmail()
+          + getLocationId()
+          + getLocationName()
+          + getPreviouslyUsedTutorsForCursorAdapter()
+          + getSchoolName()
+          + getSchoolNameAndType()
+          + getTutorRatingCount()
+          + getTutorsFilteredBySchoolForCursorAdapter()
+          + incrementTutorRevenue()
+          + insert()
+          + updateTutorLocation()
+          + updateTutorRating()
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace models {
+      class com.jxust.tutor.models.TutorRating {
+          + TutorRating()
+          + getAll()
+          + getData()
+          + getTutorRatingByTutorAndStudentId()
+          + getTutorRatingByTutorId()
+          + insert()
+          + updateTutorRating()
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace models {
+      class com.jxust.tutor.models.TutoringSession {
+          + TutoringSession()
+          + deleteTutoringSession()
+          + getAll()
+          + getAllForCursorAdapter()
+          + getData()
+          + getDataByLocationId()
+          + getDataBySchedule()
+          + getDataByStudentId()
+          + getDataByStudentIdForCursorAdapter()
+          + getDataByTitle()
+          + getDataByTutorId()
+          + getDataByTutorIdForCursorAdapter()
+          + getLastBookedSessionIdByUserId()
+          + getSessionHistoryByStudentIdForCursorAdapter()
+          + getSessionHistoryByTutorIdForCursorAdapter()
+          + getSessionHistoryDetailsBySessionIdForCursorAdapter()
+          + getSessionHistoryDetailsBySessionIdForTutorCursorAdapter()
+          + insert()
+      }
+    }
+  }
+  
+
+  com.jxust.tutor.models.AudioRecording -up-|> com.jxust.tutor.models.Table
+  com.jxust.tutor.models.AvailableTime -up-|> com.jxust.tutor.models.Table
+  com.jxust.tutor.models.Course -up-|> com.jxust.tutor.models.Table
+  com.jxust.tutor.models.DBHelper -up-|> android.database.sqlite.SQLiteOpenHelper
+  com.jxust.tutor.models.DBHelper o-- com.jxust.tutor.models.AudioRecording : audioRecording
+  com.jxust.tutor.models.DBHelper o-- com.jxust.tutor.models.AvailableTime : availableTime
+  com.jxust.tutor.models.DBHelper o-- com.jxust.tutor.models.Course : course
+  com.jxust.tutor.models.DBHelper o-- com.jxust.tutor.models.CoursesTutors : coursesTutors
+  com.jxust.tutor.models.DBHelper o-- com.jxust.tutor.models.Location : location
+  com.jxust.tutor.models.DBHelper o-- com.jxust.tutor.models.School : school
+  com.jxust.tutor.models.DBHelper o-- com.jxust.tutor.models.Student : student
+  com.jxust.tutor.models.DBHelper o-- com.jxust.tutor.models.Tutor : tutor
+  com.jxust.tutor.models.DBHelper o-- com.jxust.tutor.models.TutorRating : tutorRating
+  com.jxust.tutor.models.DBHelper o-- com.jxust.tutor.models.TutoringSession : tutoringSession
+  com.jxust.tutor.models.Location -up-|> com.jxust.tutor.models.Table
+  com.jxust.tutor.models.School -up-|> com.jxust.tutor.models.Table
+  com.jxust.tutor.models.Student -up-|> com.jxust.tutor.models.Table
+  com.jxust.tutor.models.Tutor -up-|> com.jxust.tutor.models.Table
+  com.jxust.tutor.models.TutorRating -up-|> com.jxust.tutor.models.Table
+  com.jxust.tutor.models.TutoringSession -up-|> com.jxust.tutor.models.Table
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

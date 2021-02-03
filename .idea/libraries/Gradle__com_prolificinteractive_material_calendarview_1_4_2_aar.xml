@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="Gradle: com.prolificinteractive:material-calendarview:1.4.2@aar">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/../../Android Studio/gradle_gen/caches/transforms-2/files-2.1/0c4f0ade78a018c9d81f261e9f17e276/material-calendarview-1.4.2/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/be27f457182dba90935d8c03a1abebf145b68acb/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/be27f457182dba90935d8c03a1abebf145b68acb/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/be27f457182dba90935d8c03a1abebf145b68acb/output/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../Android Studio/gradle_gen/caches/transforms-2/files-2.1/0c4f0ade78a018c9d81f261e9f17e276/material-calendarview-1.4.2/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Android Studio/gradle_gen/caches/transforms-2/files-2.1/0c4f0ade78a018c9d81f261e9f17e276/material-calendarview-1.4.2/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../Android Studio/gradle_gen/caches/transforms-2/files-2.1/0c4f0ade78a018c9d81f261e9f17e276/material-calendarview-1.4.2/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../Android Studio/gradle_gen/caches/modules-2/files-2.1/com.prolificinteractive/material-calendarview/1.4.2/ecf050dc1e2f0fd07b40b84b5181fba4a9a9c14d/material-calendarview-1.4.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.jxust.tutor.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_button"
+        android:text="Login"
+        android:background="@drawable/button_main"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp"
+        android:minWidth="170dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_above="@+id/signup_button"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/bottom_bar_color" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signup_button"
+        android:text="Sign Up"
+        android:background="@drawable/button_main"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp"
+        android:minWidth="170dp"
+        android:layout_marginBottom="97dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/login_button"
+        android:textColor="@color/bottom_bar_color" />
+
+    <TextView
+        android:id="@+id/krushSlogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jxustLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="Connecting Students with Tutors"
+        android:textColor="@color/MidnightBlue"
+        android:textSize="18sp"
+        tools:text="Connecting students with tutors" />
+
+    <TextView
+        android:id="@+id/jxustLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="Home Tutor"
+        android:textAlignment="center"
+        android:textColor="@color/MidnightBlue"
+        android:textSize="60sp"
+        android:textStyle="normal|bold"
+        tools:text="Home Tutor" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:rotation="-24"
+        android:rotationX="0"
+        android:rotationY="-0"
+        app:srcCompat="@drawable/education_color_primary" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@id/jxustLogo"
+        android:layout_marginBottom="135dp"
+        app:srcCompat="@drawable/full_logox" />
+
+
+</RelativeLayout>

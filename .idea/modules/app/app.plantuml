@@ -1,0 +1,552 @@
+@startuml
+
+title __JXUST_TUTOR_APP.APP's Class Diagram__\n
+
+  namespace com.jxust.tutor {
+    class com.jxust.tutor.BuildConfig {
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    class com.jxust.tutor.LoginMainActivity {
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    class com.jxust.tutor.MainActivity {
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    class com.jxust.tutor.RegistrationActivity {
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace StudentCursorAdapters {
+      class com.jxust.tutor.StudentCursorAdapters.BookingTutorCursorAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace StudentCursorAdapters {
+      class com.jxust.tutor.StudentCursorAdapters.HomeQuickBookCursorAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace StudentCursorAdapters {
+      class com.jxust.tutor.StudentCursorAdapters.SessionCursorAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    class com.jxust.tutor.StudentMainActivity {
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace TutorCursorAdapters {
+      class com.jxust.tutor.TutorCursorAdapters.SessionCursorAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    class com.jxust.tutor.TutorMainActivity {
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace adapters {
+      class com.jxust.tutor.adapters.CustomTutorDayTimeAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace adapters {
+      class com.jxust.tutor.adapters.TutorDayTimeRowitem {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace appFragments {
+      class com.jxust.tutor.appFragments.SessionItemFragment {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace appFragments {
+      class com.jxust.tutor.appFragments.SessionLocationFragment {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace helpers {
+      class com.jxust.tutor.helpers.BottomNavigationViewHelper {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace helpers {
+      class com.jxust.tutor.helpers.DateFormatHelper {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace helpers {
+      class com.jxust.tutor.helpers.ValidationHelper {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace models {
+      class com.jxust.tutor.models.AudioRecording {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace models {
+      class com.jxust.tutor.models.AvailableTime {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace models {
+      class com.jxust.tutor.models.Course {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace models {
+      class com.jxust.tutor.models.CoursesTutors {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace models {
+      class com.jxust.tutor.models.DBHelper {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace models {
+      class com.jxust.tutor.models.Location {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace models {
+      class com.jxust.tutor.models.School {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace models {
+      class com.jxust.tutor.models.Student {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace models {
+      abstract class com.jxust.tutor.models.Table {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace models {
+      class com.jxust.tutor.models.Tutor {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace models {
+      class com.jxust.tutor.models.TutorRating {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace models {
+      class com.jxust.tutor.models.TutoringSession {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace seeders {
+      class com.jxust.tutor.seeders.AudioRecordingSeeder {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace seeders {
+      class com.jxust.tutor.seeders.AvailableTimeSeeder {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace seeders {
+      class com.jxust.tutor.seeders.CourseSeeder {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace seeders {
+      class com.jxust.tutor.seeders.CoursesTutorsSeeder {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace seeders {
+      class com.jxust.tutor.seeders.DatabaseSeeder {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace seeders {
+      class com.jxust.tutor.seeders.LocationSeeder {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace seeders {
+      class com.jxust.tutor.seeders.SchoolSeeder {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace seeders {
+      class com.jxust.tutor.seeders.StudentSeeder {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace seeders {
+      class com.jxust.tutor.seeders.TutorRatingSeeder {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace seeders {
+      class com.jxust.tutor.seeders.TutorSeeder {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace seeders {
+      class com.jxust.tutor.seeders.TutoringSessionSeeder {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace studentFragments {
+      class com.jxust.tutor.studentFragments.StudentBookingDetailsFragment {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace studentFragments {
+      class com.jxust.tutor.studentFragments.StudentBookingFragment {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace studentFragments {
+      class com.jxust.tutor.studentFragments.StudentHistoryDetailsFragment {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace studentFragments {
+      class com.jxust.tutor.studentFragments.StudentHistoryFragment {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace studentFragments {
+      class com.jxust.tutor.studentFragments.StudentHomeFragment {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace studentFragments {
+      class com.jxust.tutor.studentFragments.StudentPaymentFragment {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace studentFragments {
+      class com.jxust.tutor.studentFragments.StudentProfileEditFragment {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace studentFragments {
+      class com.jxust.tutor.studentFragments.StudentProfileFragment {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace studentFragments {
+      class com.jxust.tutor.studentFragments.StudentUpcSessionsDetailsFragment {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace tutorFragments {
+      class com.jxust.tutor.tutorFragments.TutorAvailabilityFragment {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace tutorFragments {
+      class com.jxust.tutor.tutorFragments.TutorCalendarFragment {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace tutorFragments {
+      class com.jxust.tutor.tutorFragments.TutorHistoryDetailsFragment {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace tutorFragments {
+      class com.jxust.tutor.tutorFragments.TutorHistoryFragment {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace tutorFragments {
+      class com.jxust.tutor.tutorFragments.TutorHomeFragment {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace tutorFragments {
+      class com.jxust.tutor.tutorFragments.TutorLocationFragment {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace tutorFragments {
+      class com.jxust.tutor.tutorFragments.TutorProfileEditFragment {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace tutorFragments {
+      class com.jxust.tutor.tutorFragments.TutorProfileFragment {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace tutorFragments {
+      class com.jxust.tutor.tutorFragments.TutorSingleDayAvailabilityFragment {
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace tutorFragments {
+      class com.jxust.tutor.tutorFragments.TutorUpcSessionsDetailsFragment {
+      }
+    }
+  }
+  
+
+  com.jxust.tutor.LoginMainActivity -up-|> android.support.v7.app.AppCompatActivity
+  com.jxust.tutor.LoginMainActivity o-- com.jxust.tutor.models.DBHelper : mydb
+  com.jxust.tutor.MainActivity -up-|> android.support.v7.app.AppCompatActivity
+  com.jxust.tutor.RegistrationActivity -up-|> android.support.v7.app.AppCompatActivity
+  com.jxust.tutor.RegistrationActivity o-- com.jxust.tutor.models.DBHelper : mydb
+  com.jxust.tutor.StudentCursorAdapters.BookingTutorCursorAdapter -up-|> android.widget.CursorAdapter
+  com.jxust.tutor.StudentCursorAdapters.HomeQuickBookCursorAdapter -up-|> android.widget.CursorAdapter
+  com.jxust.tutor.StudentCursorAdapters.SessionCursorAdapter -up-|> android.widget.CursorAdapter
+  com.jxust.tutor.StudentMainActivity -up-|> android.support.v4.app.FragmentActivity
+  com.jxust.tutor.TutorCursorAdapters.SessionCursorAdapter -up-|> android.widget.CursorAdapter
+  com.jxust.tutor.TutorMainActivity -up-|> android.support.v4.app.FragmentActivity
+  com.jxust.tutor.adapters.CustomTutorDayTimeAdapter -up-|> android.widget.ArrayAdapter
+  com.jxust.tutor.adapters.CustomTutorDayTimeAdapter o-- com.jxust.tutor.helpers.DateFormatHelper : formatHelper
+  com.jxust.tutor.appFragments.SessionItemFragment -up-|> android.support.v4.app.Fragment
+  com.jxust.tutor.appFragments.SessionLocationFragment .up.|> com.google.android.gms.maps.OnMapReadyCallback
+  com.jxust.tutor.appFragments.SessionLocationFragment -up-|> android.support.v4.app.Fragment
+  com.jxust.tutor.appFragments.SessionLocationFragment o-- com.jxust.tutor.models.DBHelper : mydb
+  com.jxust.tutor.models.AudioRecording -up-|> com.jxust.tutor.models.Table
+  com.jxust.tutor.models.AvailableTime -up-|> com.jxust.tutor.models.Table
+  com.jxust.tutor.models.Course -up-|> com.jxust.tutor.models.Table
+  com.jxust.tutor.models.DBHelper -up-|> android.database.sqlite.SQLiteOpenHelper
+  com.jxust.tutor.models.DBHelper o-- com.jxust.tutor.models.AudioRecording : audioRecording
+  com.jxust.tutor.models.DBHelper o-- com.jxust.tutor.models.AvailableTime : availableTime
+  com.jxust.tutor.models.DBHelper o-- com.jxust.tutor.models.Course : course
+  com.jxust.tutor.models.DBHelper o-- com.jxust.tutor.models.CoursesTutors : coursesTutors
+  com.jxust.tutor.models.DBHelper o-- com.jxust.tutor.models.Location : location
+  com.jxust.tutor.models.DBHelper o-- com.jxust.tutor.models.School : school
+  com.jxust.tutor.models.DBHelper o-- com.jxust.tutor.models.Student : student
+  com.jxust.tutor.models.DBHelper o-- com.jxust.tutor.models.Tutor : tutor
+  com.jxust.tutor.models.DBHelper o-- com.jxust.tutor.models.TutorRating : tutorRating
+  com.jxust.tutor.models.DBHelper o-- com.jxust.tutor.models.TutoringSession : tutoringSession
+  com.jxust.tutor.models.Location -up-|> com.jxust.tutor.models.Table
+  com.jxust.tutor.models.School -up-|> com.jxust.tutor.models.Table
+  com.jxust.tutor.models.Student -up-|> com.jxust.tutor.models.Table
+  com.jxust.tutor.models.Tutor -up-|> com.jxust.tutor.models.Table
+  com.jxust.tutor.models.TutorRating -up-|> com.jxust.tutor.models.Table
+  com.jxust.tutor.models.TutoringSession -up-|> com.jxust.tutor.models.Table
+  com.jxust.tutor.seeders.DatabaseSeeder o-- com.jxust.tutor.models.DBHelper : mydb
+  com.jxust.tutor.studentFragments.StudentBookingDetailsFragment .up.|> android.view.View.OnClickListener
+  com.jxust.tutor.studentFragments.StudentBookingDetailsFragment -up-|> android.support.v4.app.Fragment
+  com.jxust.tutor.studentFragments.StudentBookingDetailsFragment o-- com.jxust.tutor.models.DBHelper : mydb
+  com.jxust.tutor.studentFragments.StudentBookingFragment -up-|> android.support.v4.app.Fragment
+  com.jxust.tutor.studentFragments.StudentBookingFragment o-- com.jxust.tutor.models.DBHelper : mydb
+  com.jxust.tutor.studentFragments.StudentHistoryDetailsFragment -up-|> android.support.v4.app.Fragment
+  com.jxust.tutor.studentFragments.StudentHistoryDetailsFragment o-- com.jxust.tutor.models.DBHelper : mydb
+  com.jxust.tutor.studentFragments.StudentHistoryFragment -up-|> android.support.v4.app.Fragment
+  com.jxust.tutor.studentFragments.StudentHomeFragment -up-|> android.support.v4.app.Fragment
+  com.jxust.tutor.studentFragments.StudentPaymentFragment -up-|> android.support.v4.app.Fragment
+  com.jxust.tutor.studentFragments.StudentPaymentFragment o-- com.jxust.tutor.models.DBHelper : mydb
+  com.jxust.tutor.studentFragments.StudentProfileEditFragment .up.|> android.view.View.OnClickListener
+  com.jxust.tutor.studentFragments.StudentProfileEditFragment -up-|> android.support.v4.app.Fragment
+  com.jxust.tutor.studentFragments.StudentProfileEditFragment o-- com.jxust.tutor.models.DBHelper : mydb
+  com.jxust.tutor.studentFragments.StudentProfileFragment .up.|> android.view.View.OnClickListener
+  com.jxust.tutor.studentFragments.StudentProfileFragment -up-|> android.support.v4.app.Fragment
+  com.jxust.tutor.studentFragments.StudentProfileFragment o-- com.jxust.tutor.models.DBHelper : mydb
+  com.jxust.tutor.studentFragments.StudentUpcSessionsDetailsFragment -up-|> android.support.v4.app.Fragment
+  com.jxust.tutor.studentFragments.StudentUpcSessionsDetailsFragment o-- com.jxust.tutor.models.DBHelper : mydb
+  com.jxust.tutor.tutorFragments.TutorAvailabilityFragment -up-|> android.support.v4.app.Fragment
+  com.jxust.tutor.tutorFragments.TutorAvailabilityFragment o-- com.jxust.tutor.models.DBHelper : db
+  com.jxust.tutor.tutorFragments.TutorCalendarFragment -up-|> android.support.v4.app.Fragment
+  com.jxust.tutor.tutorFragments.TutorCalendarFragment o-- com.jxust.tutor.models.DBHelper : db
+  com.jxust.tutor.tutorFragments.TutorHistoryDetailsFragment -up-|> android.support.v4.app.Fragment
+  com.jxust.tutor.tutorFragments.TutorHistoryDetailsFragment o-- com.jxust.tutor.models.DBHelper : mydb
+  com.jxust.tutor.tutorFragments.TutorHistoryFragment -up-|> android.support.v4.app.Fragment
+  com.jxust.tutor.tutorFragments.TutorHomeFragment -up-|> android.support.v4.app.Fragment
+  com.jxust.tutor.tutorFragments.TutorLocationFragment .up.|> com.google.android.gms.maps.OnMapReadyCallback
+  com.jxust.tutor.tutorFragments.TutorLocationFragment -up-|> android.support.v4.app.Fragment
+  com.jxust.tutor.tutorFragments.TutorLocationFragment o-- com.jxust.tutor.models.DBHelper : mydb
+  com.jxust.tutor.tutorFragments.TutorProfileEditFragment .up.|> android.view.View.OnClickListener
+  com.jxust.tutor.tutorFragments.TutorProfileEditFragment -up-|> android.support.v4.app.Fragment
+  com.jxust.tutor.tutorFragments.TutorProfileEditFragment o-- com.jxust.tutor.models.DBHelper : mydb
+  com.jxust.tutor.tutorFragments.TutorProfileFragment .up.|> android.view.View.OnClickListener
+  com.jxust.tutor.tutorFragments.TutorProfileFragment -up-|> android.support.v4.app.Fragment
+  com.jxust.tutor.tutorFragments.TutorProfileFragment o-- com.jxust.tutor.models.DBHelper : mydb
+  com.jxust.tutor.tutorFragments.TutorSingleDayAvailabilityFragment -up-|> android.support.v4.app.Fragment
+  com.jxust.tutor.tutorFragments.TutorSingleDayAvailabilityFragment o-- com.jxust.tutor.models.DBHelper : db
+  com.jxust.tutor.tutorFragments.TutorUpcSessionsDetailsFragment -up-|> android.support.v4.app.Fragment
+  com.jxust.tutor.tutorFragments.TutorUpcSessionsDetailsFragment o-- com.jxust.tutor.models.DBHelper : mydb
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

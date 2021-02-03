@@ -1,0 +1,256 @@
+@startuml
+
+title __TUTORFRAGMENTS's Class Diagram__\n
+
+  namespace com.jxust.tutor {
+    namespace tutorFragments {
+      class com.jxust.tutor.tutorFragments.TutorAvailabilityFragment {
+          {static} ~ USER_ID : int
+          ~ btnDatePicker : Button
+          ~ btnEndTimePicker : Button
+          ~ btnStartTimePicker : Button
+          ~ btnSubmit : Button
+          ~ btnViewCalendar : Button
+          ~ btnViewLocation : Button
+          ~ txtDate : EditText
+          ~ txtEndTime : EditText
+          ~ txtSelectAvailability : TextView
+          ~ txtStartTime : EditText
+          ~ txtTitle : TextView
+          ~ txtYourAvailability : TextView
+          - endTime : String
+          - endTimeCalendar : GregorianCalendar
+          - lvTutorScheduleListView : ListView
+          - mDay : int
+          - mHour : int
+          - mMinute : int
+          - mMonth : int
+          - mYear : int
+          - rl : RelativeLayout
+          - sDay : int
+          - sEndHour : int
+          - sEndMinute : int
+          - sMonth : int
+          - sStartHour : int
+          - sStartMinute : int
+          - sYear : int
+          - startTime : String
+          - startTimeCalendar : GregorianCalendar
+          - timeFormatter : DateFormat
+          + concatenateDateTime()
+          + formatMonth()
+          {static} + getFullDayName()
+          + loadSchedule()
+          + onActivityCreated()
+          + onCreateView()
+          + stripTime()
+          - getDate()
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace tutorFragments {
+      class com.jxust.tutor.tutorFragments.TutorCalendarFragment {
+          - mWeekView : WeekView
+          + onActivityCreated()
+          + onCreateView()
+          # getEventTitle()
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace tutorFragments {
+      class com.jxust.tutor.tutorFragments.TutorHistoryDetailsFragment {
+          {static} ~ SESSION_ID : int
+          {static} ~ USER_ID : int
+          ~ endField : TextView
+          ~ locationField : TextView
+          ~ schoolField : TextView
+          ~ sessionCursor : Cursor
+          ~ sessionInfoLabel : TextView
+          ~ startField : TextView
+          ~ studentEmailField : TextView
+          ~ studentLabel : TextView
+          ~ studentNameField : TextView
+          ~ studentPicture : ImageView
+          ~ titleField : TextView
+          + onCreateView()
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace tutorFragments {
+      class com.jxust.tutor.tutorFragments.TutorHistoryFragment {
+          {static} ~ USER_ID : int
+          + onCreateView()
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace tutorFragments {
+      class com.jxust.tutor.tutorFragments.TutorHomeFragment {
+          {static} ~ USER_ID : int
+          + onCreateView()
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace tutorFragments {
+      class com.jxust.tutor.tutorFragments.TutorLocationFragment {
+          {static} ~ USER_ID : int
+          - address : String
+          - cursor : Cursor
+          - locationId : String
+          - mMap : GoogleMap
+          + getMarkerIcon()
+          + onCreateView()
+          + onMapReady()
+          - setAddress()
+          - setUpMap()
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace tutorFragments {
+      class com.jxust.tutor.tutorFragments.TutorProfileEditFragment {
+          {static} ~ REQUEST_GALLERY : int
+          {static} ~ REQUEST_IMAGE_CAPTURE : int
+          {static} ~ USER_ID : int
+          ~ changePicture : Button
+          ~ curr_password_view : EditText
+          ~ current_password_label : TextView
+          ~ email_label : TextView
+          ~ email_view : EditText
+          ~ myView : View
+          ~ new_password_confirmation_label : TextView
+          ~ new_password_label : TextView
+          ~ new_password_view : EditText
+          ~ new_password_view_conf : EditText
+          ~ profile_name_view : TextView
+          ~ profile_picture_view : ImageView
+          ~ rate_label : TextView
+          ~ rate_view : EditText
+          ~ saveProfile : Button
+          ~ school_label : TextView
+          ~ school_view : Spinner
+          - cursor : Cursor
+          - imagePath : String
+          - schoolList : ArrayList<String>
+          - user_password : String
+          + changePicture()
+          + onActivityResult()
+          + onClick()
+          + onCreateView()
+          # createImage()
+          - openCamera()
+          - openGallery()
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace tutorFragments {
+      class com.jxust.tutor.tutorFragments.TutorProfileFragment {
+          {static} ~ USER_ID : int
+          ~ edit_btn : ImageView
+          ~ email_label : TextView
+          ~ email_view : TextView
+          ~ profile_name_view : TextView
+          ~ profile_picture_view : ImageView
+          ~ rate_label : TextView
+          ~ rate_view : TextView
+          ~ school_label : TextView
+          ~ school_view : TextView
+          - cursor : Cursor
+          + onClick()
+          + onCreateView()
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace tutorFragments {
+      class com.jxust.tutor.tutorFragments.TutorSingleDayAvailabilityFragment {
+          {static} ~ USER_ID : int
+          - day : String
+          - lvTutorDaySchedule : ListView
+          - mItemTouchHelper : ItemTouchHelper
+          - month : String
+          - tvAvailableDayTitle : TextView
+          - year : String
+          + loadSchedule()
+          + onActivityCreated()
+          + onCreateView()
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace tutorFragments {
+      class com.jxust.tutor.tutorFragments.TutorUpcSessionsDetailsFragment {
+          {static} ~ SESSION_ID : int
+          {static} ~ USER_ID : int
+          ~ cancelButton : Button
+          ~ endField : TextView
+          ~ locationField : TextView
+          ~ schoolField : TextView
+          ~ sessionCursor : Cursor
+          ~ sessionInfoLabel : TextView
+          ~ startField : TextView
+          ~ studentEmailField : TextView
+          ~ studentLabel : TextView
+          ~ studentNameField : TextView
+          ~ studentPicture : ImageView
+          ~ titleField : TextView
+          + onCreateView()
+      }
+    }
+  }
+  
+
+  com.jxust.tutor.tutorFragments.TutorAvailabilityFragment -up-|> android.support.v4.app.Fragment
+  com.jxust.tutor.tutorFragments.TutorAvailabilityFragment o-- com.jxust.tutor.models.DBHelper : db
+  com.jxust.tutor.tutorFragments.TutorCalendarFragment -up-|> android.support.v4.app.Fragment
+  com.jxust.tutor.tutorFragments.TutorCalendarFragment o-- com.jxust.tutor.models.DBHelper : db
+  com.jxust.tutor.tutorFragments.TutorHistoryDetailsFragment -up-|> android.support.v4.app.Fragment
+  com.jxust.tutor.tutorFragments.TutorHistoryDetailsFragment o-- com.jxust.tutor.models.DBHelper : mydb
+  com.jxust.tutor.tutorFragments.TutorHistoryFragment -up-|> android.support.v4.app.Fragment
+  com.jxust.tutor.tutorFragments.TutorHomeFragment -up-|> android.support.v4.app.Fragment
+  com.jxust.tutor.tutorFragments.TutorLocationFragment .up.|> com.google.android.gms.maps.OnMapReadyCallback
+  com.jxust.tutor.tutorFragments.TutorLocationFragment -up-|> android.support.v4.app.Fragment
+  com.jxust.tutor.tutorFragments.TutorLocationFragment o-- com.jxust.tutor.models.DBHelper : mydb
+  com.jxust.tutor.tutorFragments.TutorProfileEditFragment .up.|> android.view.View.OnClickListener
+  com.jxust.tutor.tutorFragments.TutorProfileEditFragment -up-|> android.support.v4.app.Fragment
+  com.jxust.tutor.tutorFragments.TutorProfileEditFragment o-- com.jxust.tutor.models.DBHelper : mydb
+  com.jxust.tutor.tutorFragments.TutorProfileFragment .up.|> android.view.View.OnClickListener
+  com.jxust.tutor.tutorFragments.TutorProfileFragment -up-|> android.support.v4.app.Fragment
+  com.jxust.tutor.tutorFragments.TutorProfileFragment o-- com.jxust.tutor.models.DBHelper : mydb
+  com.jxust.tutor.tutorFragments.TutorSingleDayAvailabilityFragment -up-|> android.support.v4.app.Fragment
+  com.jxust.tutor.tutorFragments.TutorSingleDayAvailabilityFragment o-- com.jxust.tutor.models.DBHelper : db
+  com.jxust.tutor.tutorFragments.TutorUpcSessionsDetailsFragment -up-|> android.support.v4.app.Fragment
+  com.jxust.tutor.tutorFragments.TutorUpcSessionsDetailsFragment o-- com.jxust.tutor.models.DBHelper : mydb
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

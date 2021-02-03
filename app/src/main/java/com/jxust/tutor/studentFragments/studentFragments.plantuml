@@ -1,0 +1,241 @@
+@startuml
+
+title __STUDENTFRAGMENTS's Class Diagram__\n
+
+  namespace com.jxust.tutor {
+    namespace studentFragments {
+      class com.jxust.tutor.studentFragments.StudentBookingDetailsFragment {
+          {static} ~ TUTOR_ID : int
+          {static} ~ USER_ID : int
+          ~ bookButton : Button
+          ~ courseSpinnerView : Spinner
+          ~ coursesLabel : TextView
+          ~ isValid : boolean
+          ~ location : String
+          ~ locationLabel : TextView
+          ~ locationView : TextView
+          ~ name : String
+          ~ nameView : TextView
+          ~ rate : String
+          ~ rateLabel : TextView
+          ~ rateView : TextView
+          ~ ratingBarView : RatingBar
+          ~ ratingCount : TextView
+          ~ schoolLabel : TextView
+          ~ schoolView : TextView
+          ~ timeCursor : Cursor
+          ~ timeLabel : TextView
+          ~ timeSpinnerView : Spinner
+          ~ tutorCursor : Cursor
+          ~ tutorProfilePicView : ImageView
+          + onClick()
+          + onCreateView()
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace studentFragments {
+      class com.jxust.tutor.studentFragments.StudentBookingFragment {
+          {static} ~ USER_ID : int
+          - C : Context
+          - tutorsListView : ListView
+          + onCreateView()
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace studentFragments {
+      class com.jxust.tutor.studentFragments.StudentHistoryDetailsFragment {
+          ~ AudioSavePathInDevice : String
+          {static} ~ SESSION_ID : int
+          {static} ~ TUTOR_ID : int
+          {static} ~ USER_ID : int
+          ~ endField : TextView
+          ~ locationField : TextView
+          ~ mediaPlayer : MediaPlayer
+          ~ playRecording : Button
+          ~ rateTutor : TextView
+          ~ ratingBarView : RatingBar
+          ~ schoolField : TextView
+          ~ sessionCursor : Cursor
+          ~ sessionInfoLabel : TextView
+          ~ startField : TextView
+          ~ stopRecording : Button
+          ~ student : Cursor
+          ~ titleField : TextView
+          ~ tutorEmailField : TextView
+          ~ tutorLabel : TextView
+          ~ tutorNameField : TextView
+          ~ tutorPicture : ImageView
+          + onCreateView()
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace studentFragments {
+      class com.jxust.tutor.studentFragments.StudentHistoryFragment {
+          {static} ~ USER_ID : int
+          + onCreateView()
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace studentFragments {
+      class com.jxust.tutor.studentFragments.StudentHomeFragment {
+          {static} ~ USER_ID : int
+          + onCreateView()
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace studentFragments {
+      class com.jxust.tutor.studentFragments.StudentPaymentFragment {
+          {static} ~ COST : float
+          {static} ~ END_TIME : String
+          {static} ~ LOCATION_ID : int
+          {static} ~ START_TIME : String
+          {static} ~ TITLE : String
+          {static} ~ TUTOR_ID : int
+          {static} ~ USER_ID : int
+          - creditCarNumber : String
+          - cvvNumbers : String
+          - expirationMonth : String
+          - isValid : boolean
+          + onCreateView()
+          - grayOut()
+          - removeFilter()
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace studentFragments {
+      class com.jxust.tutor.studentFragments.StudentProfileEditFragment {
+          {static} ~ REQUEST_GALLERY : int
+          {static} ~ REQUEST_IMAGE_CAPTURE : int
+          {static} ~ USER_ID : int
+          ~ changePicture : Button
+          ~ curr_password_view : EditText
+          ~ current_password_label : TextView
+          ~ email_label : TextView
+          ~ email_view : EditText
+          ~ myView : View
+          ~ new_password_confirmation_label : TextView
+          ~ new_password_label : TextView
+          ~ new_password_view : EditText
+          ~ new_password_view_conf : EditText
+          ~ profile_name_view : TextView
+          ~ profile_picture_view : ImageView
+          ~ saveProfile : Button
+          ~ school_label : TextView
+          ~ school_view : Spinner
+          - cursor : Cursor
+          - imagePath : String
+          - schoolList : ArrayList<String>
+          - user_password : String
+          + changePicture()
+          + onActivityResult()
+          + onClick()
+          + onCreateView()
+          # createImage()
+          - openCamera()
+          - openGallery()
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace studentFragments {
+      class com.jxust.tutor.studentFragments.StudentProfileFragment {
+          {static} ~ USER_ID : int
+          - cursor : Cursor
+          - edit_btn : ImageView
+          - email_label : TextView
+          - email_view : TextView
+          - profile_name_view : TextView
+          - profile_picture_view : ImageView
+          - school_label : TextView
+          - school_view : TextView
+          {static} + isNumeric()
+          + onClick()
+          + onCreateView()
+      }
+    }
+  }
+  
+
+  namespace com.jxust.tutor {
+    namespace studentFragments {
+      class com.jxust.tutor.studentFragments.StudentUpcSessionsDetailsFragment {
+          {static} + RequestPermissionCode : int
+          ~ AudioSavePathInDevice : String
+          {static} ~ SESSION_ID : int
+          {static} ~ USER_ID : int
+          ~ cancelButton : Button
+          ~ endField : TextView
+          ~ hasRecorded : Cursor
+          ~ locationField : TextView
+          ~ mediaRecorder : MediaRecorder
+          ~ schoolField : TextView
+          ~ sessionCursor : Cursor
+          ~ sessionDetailLocation : Button
+          ~ sessionInfoLabel : TextView
+          ~ sessionRecordStart : Button
+          ~ sessionRecordStop : Button
+          ~ startField : TextView
+          ~ student : Cursor
+          ~ titleField : TextView
+          ~ tutorEmailField : TextView
+          ~ tutorLabel : TextView
+          ~ tutorNameField : TextView
+          ~ tutorPicture : ImageView
+          + MediaRecorderReady()
+          + checkPermission()
+          + onCreateView()
+          - requestPermission()
+      }
+    }
+  }
+  
+
+  com.jxust.tutor.studentFragments.StudentBookingDetailsFragment .up.|> android.view.View.OnClickListener
+  com.jxust.tutor.studentFragments.StudentBookingDetailsFragment -up-|> android.support.v4.app.Fragment
+  com.jxust.tutor.studentFragments.StudentBookingDetailsFragment o-- com.jxust.tutor.models.DBHelper : mydb
+  com.jxust.tutor.studentFragments.StudentBookingFragment -up-|> android.support.v4.app.Fragment
+  com.jxust.tutor.studentFragments.StudentBookingFragment o-- com.jxust.tutor.models.DBHelper : mydb
+  com.jxust.tutor.studentFragments.StudentHistoryDetailsFragment -up-|> android.support.v4.app.Fragment
+  com.jxust.tutor.studentFragments.StudentHistoryDetailsFragment o-- com.jxust.tutor.models.DBHelper : mydb
+  com.jxust.tutor.studentFragments.StudentHistoryFragment -up-|> android.support.v4.app.Fragment
+  com.jxust.tutor.studentFragments.StudentHomeFragment -up-|> android.support.v4.app.Fragment
+  com.jxust.tutor.studentFragments.StudentPaymentFragment -up-|> android.support.v4.app.Fragment
+  com.jxust.tutor.studentFragments.StudentPaymentFragment o-- com.jxust.tutor.models.DBHelper : mydb
+  com.jxust.tutor.studentFragments.StudentProfileEditFragment .up.|> android.view.View.OnClickListener
+  com.jxust.tutor.studentFragments.StudentProfileEditFragment -up-|> android.support.v4.app.Fragment
+  com.jxust.tutor.studentFragments.StudentProfileEditFragment o-- com.jxust.tutor.models.DBHelper : mydb
+  com.jxust.tutor.studentFragments.StudentProfileFragment .up.|> android.view.View.OnClickListener
+  com.jxust.tutor.studentFragments.StudentProfileFragment -up-|> android.support.v4.app.Fragment
+  com.jxust.tutor.studentFragments.StudentProfileFragment o-- com.jxust.tutor.models.DBHelper : mydb
+  com.jxust.tutor.studentFragments.StudentUpcSessionsDetailsFragment -up-|> android.support.v4.app.Fragment
+  com.jxust.tutor.studentFragments.StudentUpcSessionsDetailsFragment o-- com.jxust.tutor.models.DBHelper : mydb
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
